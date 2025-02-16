@@ -22,7 +22,7 @@ nav a:focus {
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
 :focus {
-     border: 2px solid;
+     border: 2px solid #000000;
  }
 
 
@@ -42,7 +42,7 @@ first div in the grid  and place it in the grid. */
      background-position: center;
      background-repeat: no-repeat; 
      background-attachment: fixed; 
-     grid-column: span 2;
+     grid-column: 1/ -1;
      height: 400px;
 }
 
@@ -120,8 +120,8 @@ first div in the grid  and place it in the grid. */
 
   /* Step 9: Write the selector/rule property to style the nav element */
   nav {
-     background-color: #ddd;
-     padding: 15px;
+     background-color: #FFFFFF;
+     padding: 30px 0px;
      text-align: right;
  }
  
