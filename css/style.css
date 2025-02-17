@@ -12,17 +12,17 @@ nav a:focus {
 .skip a{
      position: absolute;
      top: -40px;
+     left: 0;
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 .skip a:focus {
-     position: absolute;
      top: 20px;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
-:focus {
-     border: 2px solid #000000;
+*:focus {
+     border: 2px solid black;
  }
 
 
@@ -36,7 +36,7 @@ nav a:focus {
 
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid  and place it in the grid. */
-.container > :first-child {
+.container div:first-child {
      background-image: url('../images/header.jpg');
      background-size: cover;
      background-position: center;
@@ -112,13 +112,12 @@ first div in the grid  and place it in the grid. */
 }
 
 /* Add your media query here */
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
 
   /* Step 9: Write the selector/rule property to style the nav element */
-  nav {
-     background-color: #FFFFFF;
-     padding: 30px 0px;
+  nav ul {
      text-align: right;
+
  }
  
  
@@ -128,7 +127,7 @@ first div in the grid  and place it in the grid. */
      grid-template-columns: 50px auto 500px auto 50px;
      gap: 20px;
  }
- 
+
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
 .about, 
