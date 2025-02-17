@@ -54,28 +54,24 @@ first div in the grid  and place it in the grid. */
           grid-column: 2/3;
           grid-row: 2;
           text-align: center;
-          /* margin: auto; */
      }
      
      .method {
           grid-column: 2/3;
           grid-row: 3;
           text-align: center;
-          /* margin: auto; */
      }
      
      .clients {
           grid-column: 2/3;
           grid-row: 4;
           text-align: center;
-          /* margin: auto; */
      }
      
      .contact {
           grid-column: 2/3;
           grid-row: 5;
           text-align: center;
-          /* margin: auto; */
      }
      .about-image {
           grid-column: 1/-1;
@@ -116,7 +112,7 @@ first div in the grid  and place it in the grid. */
 }
 
 /* Add your media query here */
-@media (max-width: 800px) {
+@media (min-width: 800px) {
 
   /* Step 9: Write the selector/rule property to style the nav element */
   nav {
